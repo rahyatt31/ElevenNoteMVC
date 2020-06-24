@@ -94,6 +94,10 @@
     <Compile Include="Migrations\202005282058018_AddCategoryClass.Designer.cs">
       <DependentUpon>202005282058018_AddCategoryClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006241427430_June.cs" />
+    <Compile Include="Migrations\202006241427430_June.Designer.cs">
+      <DependentUpon>202006241427430_June.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005282058018_AddCategoryClass.resx">
       <DependentUpon>202005282058018_AddCategoryClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006241427430_June.resx">
+      <DependentUpon>202006241427430_June.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

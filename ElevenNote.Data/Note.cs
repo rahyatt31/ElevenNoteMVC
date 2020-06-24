@@ -30,9 +30,9 @@ namespace ElevenNote.Data
         public DateTimeOffset? ModifiedUtc { get; set; }            // Creating a Property for when the category is "Modified" or "Updated"
 
 
-        [ForeignKey("Category")]                                    // Category goes into Note, Note = Parent, Category = Child
-        public int CategoryID { get; set; }
-        public Category Category { get; set; }
+        //[ForeignKey("Category")]                                    // Category goes into Note, Note = Parent, Category = Child
+        //public int CategoryID { get; set; }
+        //public Category Category { get; set; }
 
         // public virtual Category Category {get; set;}
         // using virtual allows Override on Category
