@@ -4,7 +4,7 @@ using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(ElevenNote.WebAPI.Startup))]
+//[assembly: OwinStartup(typeof(ElevenNote.WebAPI.Startup))]
 
 namespace ElevenNote.WebAPI
 {
