@@ -41,6 +41,8 @@ namespace ElevenNote.WebMVC.Controllers
         {
             if (!ModelState.IsValid) return View(model);
 
+            
+
             var service = CreateNoteService();
 
             if (service.CreateNote(model))
@@ -50,6 +52,14 @@ namespace ElevenNote.WebMVC.Controllers
             };
 
             ModelState.AddModelError("", "Note could not be created.");
+
+            return View(model);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var svc = CreateNoteService();
+            var model = svc.GetNoteById(id);
 
             return View(model);
         }
